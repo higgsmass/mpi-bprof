@@ -1,0 +1,73 @@
+---
+
+- name: ubuntu-x64-01
+  enabled: false
+  hostname: ubuntu-x64-01 
+  box: ubuntu/trusty64
+  resource:
+    memory: 1024
+    cpus: 1
+  ip: 192.168.33.10
+  synced_dirs:
+    - local: ../../build
+      remote: /build
+      options:
+        :create: true
+        :owner: vagrant
+        :group: vagrant
+        :mount_options: ['dmode=0755', 'fmode=0644']
+  bootstrap: bin/vagrant_script.sh
+
+
+  # rchouinard/oracle-65-x64
+  # boxcutter/ol67
+  # uclbioresource/oracle68
+- name: oracle-linux68
+  enabled: false
+  hostname: oracle-linux68-x64
+  box: uclbioresource/oracle68
+  resource:
+    memory: 2048
+    cpus: 1
+  ip: 192.168.33.20
+  synced_dirs:
+    - local: ../../build
+      remote: /build
+      options:
+        :create: true
+        :owner: vagrant
+        :group: vagrant
+        :mount_options: ['dmode=0755', 'fmode=0644']
+    - local: roles/pyenv/files
+      remote: /files
+      options:
+        :create: true
+        :owner: vagrant
+        :group: vagrant
+        :mount_options: ['dmode=0755', 'fmode=0644']
+  bootstrap: bin/vagrant_script.sh
+
+- name: oracle-linux7
+  enabled: true
+  hostname: oracle-linux7-x64
+  box: a-h/oracle_linux_7
+  resource:
+    memory: 2048
+    cpus: 1
+  ip: 192.168.33.30
+  synced_dirs:
+    - local: ../../build
+      remote: /build
+      options:
+        :create: true
+        :owner: vagrant
+        :group: vagrant
+        :mount_options: ['dmode=0755', 'fmode=0644']
+    - local: roles/pyenv/files
+      remote: /files
+      options:
+        :create: true
+        :owner: vagrant
+        :group: vagrant
+        :mount_options: ['dmode=0755', 'fmode=0644']
+  bootstrap: bin/vagrant_script.sh

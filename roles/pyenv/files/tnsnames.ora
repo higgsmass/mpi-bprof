@@ -1,0 +1,10 @@
+myserv =
+(DESCRIPTION=
+  (ADDRESS_LIST=
+     (ADDRESS=(PROTOCOL=TCP)(HOST=hssc-cdwr3-db2-d.clemson.edu)(PORT=1521)
+     )
+  )
+  (CONNECT_DATA=
+     (SID=dtdev)
+  )
+)

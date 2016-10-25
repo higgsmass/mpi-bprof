@@ -1,2 +1,2 @@
 # mpi-bprof
-EMPI Business Object Profiler - A web services interface to Masster Index Data Manager (MIDM)
+EMPI Business Object Profiler - A web services interface to Master Index Data Manager (MIDM)
