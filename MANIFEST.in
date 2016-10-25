@@ -1,5 +1,0 @@
-include README.md LICENSE MANIFEST.in requirements.txt
-include setup.py
-include tests/*
-include bin/*
-include docs/*
