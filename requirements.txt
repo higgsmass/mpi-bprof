@@ -1,0 +1,6 @@
+passlib==1.6.5
+python-gnupg==0.3.9
+requests==2.11.1
+suds==0.4
+suds-jurko==0.6
+suds-requests==0.3
