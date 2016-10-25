@@ -1,0 +1,3 @@
+---
+# vars file for pyenv
+virtualenv_path: /home/vagrant/venv
