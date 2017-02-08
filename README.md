@@ -1,7 +1,9 @@
 # mpi-bprof
 
 # Summary
-EMPI Business Object Profiler - A web services interface to Master Index Data Manager (MIDM) that takes as it's input demographic information (in plain or encrypted format), queries the database and returns matching patient records. For each matching record, it also retrurns a list of local ID's (LID) found for a given institution. The output is serialized and (optionally) can be encrypted.
+EMPI Business Object Profiler - A web services interface to Master Index Data Manager (MIDM) 
+It takes as it's input demographic information (in plain-text or encrypted format), queries (using WSDL/SOAP web services) the database and returns matching patient records. For each matching record, it also retrurns a list of local ID's (LID) found for a given institution. The number of matches can be controlled using the match score. See the configuration for more details.
+The output is serialized and (optionally) can be encrypted.
 
 # Documentation
 https://hssc.github.io/mpi-bprof/
@@ -36,4 +38,9 @@ Enter cipher key for decrypting "/data/hssclts/hssclts/mpiprof/HSSC_MonthlyTest_
 real    776m39.895s
 user    185m26.273s
 sys     0m15.519s
+
+[ mpi-bprof ] : [mpiprof@hssc-vetl-p ~]$ ls -l /tmp/HSSC_MonthlyTest_27800.txt 
+-rw-rw-r--. 1 mpiprof mpiprof 14940373 Oct 25 22:59 /tmp/HSSC_MonthlyTest_27800.txt
+
 ```
+
