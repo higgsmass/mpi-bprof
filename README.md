@@ -10,11 +10,14 @@ https://hssc.github.io/mpi-bprof/
 Login to hssc-vetl-p, sudo as root and attach the existing screen session (103857.pts-0.hssc-vetl-p) OR sudo as mpiprof
 
 Activate the virtual environment to run the program
-```[mpiprof@hssc-vetl-p ~]$ source ~mpiprof/mpienv/bin/activate
+
+```
+[mpiprof@hssc-vetl-p ~]$ source ~mpiprof/mpienv/bin/activate
 ```
 
 For help with the application use:
-```[ mpi-bprof ] : [mpiprof@hssc-vetl-p ~]$ mpiws --help
+```
+[ mpi-bprof ] : [mpiprof@hssc-vetl-p ~]$ mpiws --help
 ```
 
 Note: We received an encrypted enrollment file from MUSC (which will be the input file) and use `-t [ --throttle ]` option to throttle the API that hits the EMPI DB using the web services. Throttling is necessary to prevent swarming the DB. Use the default configuration file (`/usr/local/etc/mpi-bprof/mpiprof.conf`)
