@@ -1,8 +1,9 @@
 # mpi-bprof
 
-## Summary
-EMPI Business Object Profiler - A web services interface to Master Index Data Manager (MIDM)
-## Documentation
+# Summary
+EMPI Business Object Profiler - A web services interface to Master Index Data Manager (MIDM) that takes as it's input demographic information (in plain or encrypted format), queries the database and returns matching patient records. For each matching record, it also retrurns a list of local ID's (LID) found for a given institution. The output is serialized and (optionally) can be encrypted.
+
+# Documentation
 https://hssc.github.io/mpi-bprof/
 
 # Instructions to run
