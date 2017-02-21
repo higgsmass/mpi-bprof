@@ -6,7 +6,7 @@ It takes as it's input demographic information (in plain-text or encrypted forma
 The search can be restricted to an institution. The number of matches can be controlled using the match score. See the configuration for more details. The output is serialized and (optionally) can be encrypted.
 
 # Documentation
-https://hssc.github.io/mpi-bprof/
+https://higgsmass.github.io/mpi-bprof/
 
 # Instructions to run
 
